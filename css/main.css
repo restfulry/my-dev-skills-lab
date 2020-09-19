@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template: 1 / 1;
+    justify-items: center;
+    align-items: center;
+    font-family: Arial;
+}
+
+#title {
+    background-color: rgb(135,188,118);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+/* skill text */
+tr > .skill {
+    color: rgb(255,142,40);
+}
+
+/* X button */
+td > #remove-skill {
+    color: white;
+    border-color: rgb(135,188,118);
+    background-color: rgb(222,85,93);
+    margin: 10px 10px 10px auto;
+}
+
+/* input form */
+div > .skill-input {
+    border-color: rgb(135,188,118);
+    border-width: 3px;
+}
+
+/* add skill button */
+div > #add-skill {
+    border-color: rgb(135,188,118);
+    border-width: 3px;
+    background-color: white;
+    margin-top: 10px;
+}
