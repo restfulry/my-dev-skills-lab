@@ -15,9 +15,10 @@ $addSkill.click(function(e) {
     `)
 
     $('table').append(addedSkill);
+    $('.skill-input')[0].value = '';
 });
 
 $('#my-skills-div').on('click','button', function(e){
-    console.log('clicked Remove');
+    // console.log('clicked Remove');
     $(this).closest('tr').remove();
 })

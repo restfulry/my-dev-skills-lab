@@ -1,17 +1,31 @@
-body {
+* {
     margin: 0;
-    display: grid;
-    grid-template: 1 / 1;
-    justify-items: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     font-family: Arial;
 }
 
+#my-skills-div {
+  
+}
+
 #title {
+    /* display: flex;
+    align-content: justify;
+    justify-content: center; */
     background-color: rgb(135,188,118);
     text-align: center;
     color: white;
     font-size: 20px;
+    padding: 12px 70px 12px 70px;
 }
 
 /* skill text */
@@ -22,21 +36,24 @@ tr > .skill {
 /* X button */
 td > #remove-skill {
     color: white;
-    border-color: rgb(135,188,118);
     background-color: rgb(222,85,93);
+    border-radius: 0px;
     margin: 10px 10px 10px auto;
 }
 
 /* input form */
 div > .skill-input {
-    border-color: rgb(135,188,118);
-    border-width: 3px;
+    border: 3px solid rgb(135,188,118);
+    width: 72%;
+    margin-right: 5px;
+    padding: 7px;
 }
 
 /* add skill button */
 div > #add-skill {
-    border-color: rgb(135,188,118);
-    border-width: 3px;
+    border: 3px solid rgb(135,188,118);
     background-color: white;
     margin-top: 10px;
+    color: rgb(135,188,118);
+    padding: 7px;
 }
